@@ -1,0 +1,112 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Typographies */
+.original-surfer-regular {
+    font-family: "Original Surfer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bodyIndex{
+    background-color: rgb(167 100 203);
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.headerMenu div{
+    padding: 20px;
+}
+.headerMenu div nav{
+    text-align: right;
+}
+.headerMenu div nav a{
+    margin: 40px;
+    color: white;
+}
+.headerMenu div nav a:hover{
+    color:rgb(146, 158, 226)
+}
+.fontSize25{
+    font-size: 25px;
+}
+.fontSize18{
+    font-size: 18px;
+}
+.fontSize12{
+    font-size: 12px;
+}
+.colorWhite{
+    color: white;
+}
+.sectionOnePerfilImageDiv{
+    width: 50%;
+    text-align: center;
+    align-content: center;
+}
+.sectionOnePerfilImageDiv img{
+    width: 60%;
+    border-radius: 50%;
+    border: 10px solid rgb(162, 54, 139);    
+}
+.sectionOneAboutmeDiv{
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+}
+.btnColapse{
+    background-color:rgb(162, 54, 139);
+    border: 1px solid;
+    border-radius: 16px;
+    color: #fff;
+    padding: 25px;
+    margin: 25px;
+    width: 250px;
+}
+.btnColapse:hover{
+    background-color: #640645;
+    border: 1px solid;
+    border-radius: 16px;
+    color: #fff;
+}
+.modal-header{
+    align-self: center;
+    border: none;
+}
+.modalHobies{
+    background: rgb(162, 54, 139);
+    color: white;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: #640645;
+}
+.bodyProyect{
+    background-color: rgb(111, 165, 230);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.card-img-top{
+    height: 200px;
+}
+.card-body{
+    align-content: center;
+}
+.headerMenu div {
+    background: rgb(162, 54, 139);;
+}

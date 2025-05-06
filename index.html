@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Sobre mi</title>
+</head>
+<body class="bodyIndex">
+    <!----Header---->
+    <header class="headerMenu">
+        <div>
+            <nav>
+                <a class="original-surfer-regular fontSize25" href="proyect.html">Proyectos</a>
+                <a class="original-surfer-regular fontSize25" href="skills.html">Habilidades</a>
+                <a class="original-surfer-regular fontSize25" href="contact.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <!------Content Page index main-->
+    <main>
+        <!---Section one -->
+        <section>
+            <div class="d-flex p-4">
+                <div class="sectionOnePerfilImageDiv">
+                    <img src="/media/fotoPerfil.jpg" alt="Imagen de perfil" >
+                </div>
+                <div class="sectionOneAboutmeDiv">
+                    <h1 class="original-surfer-regular colorWhite fontSize25">Sobre mi</h1>
+                    <div class="poiret-one-regular colorWhite fontSize18">Soy una persona que aprende rápido, me gusta enfrentar nuevos retos y siempre busco     maneras creativas de resolver problemas. Disfruto mucho trabajar en equipo porque creo que las buenas ideas crecen más cuando se comparten, y me considero alguien comprometida y responsable con las metas que me propongo.
+
+                    En 2021 di mi primer paso en el mundo del Desarrollo, comenzando con un curso básico que despertó en mí el interés por la tecnología y el diseño de soluciones digitales. Ese mismo año, en julio, tuve la oportunidad de trabajar en Laika, una empresa de productos para mascotas, donde estuve hasta diciembre de 2022. Fue una experiencia muy valiosa que me enseñó sobre trabajo en equipo y compromiso.
+                    
+                    Aunque llevo casi tres años sin trabajo formal, no me he detenido. He seguido formándome, haciendo cursos y estudiando de forma constante para fortalecer mis conocimientos en desarrollo web y programación, con la meta de regresar pronto al mundo laboral, esta vez en el campo que me apasiona. Estoy convencida de que cada aprendizaje suma y que el esfuerzo constante abre nuevas oportunidades.</div>
+                </div>
+            </div>
+        </section>
+        <!---Section two -->
+        <section class="p-5">
+            <h1 class="original-surfer-regular colorWhite text-center p-3">Hobbies</h1>
+            <div class="text-center p-4">
+                <!-- Button trigger modal Hobbies-->
+                <button type="button" class="btn btnColapse original-surfer-regular fontSize18" data-bs-toggle="modal" data-bs-target="#read">
+                    Leer
+                </button>
+                <button type="button" class="btn btnColapse original-surfer-regular fontSize18" data-bs-toggle="modal" data-bs-target="#seriesAndMovies">
+                    Series y Peliculas
+                </button>
+                <button type="button" class="btn btnColapse original-surfer-regular fontSize18" data-bs-toggle="modal" data-bs-target="#boardGames">
+                    Juegos de Mesa
+                </button>
+            </div>
+        </section>
+        <!-- Code Modals -->
+
+        <!-- Modal Hobbie Read-->
+        <div class="modal fade" id="read" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modalHobies">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title original-surfer-regular fontSize25 " id="staticBackdropLabel">Leer</h5>
+                    </div>
+                    <div class="modal-body poiret-one-regular  fontSize25">
+                        Desde que tengo memoria, los libros han sido una ventana a mundos imposibles. Me encanta leer, y si se trata de historias fantásticas, mejor. Tengo una debilidad por las novelas que mezclan lo sobrenatural con personajes adolescentes enfrentando cosas mucho más grandes que ellos. Vampiros, brujas, poderes ocultos, portales a otras dimensiones… todo ese tipo de historias me atrapan. Disfruto perderme entre páginas donde la magia y los secretos antiguos se cruzan con dilemas humanos. Siempre ando en busca de ese libro que me haga quedarme despierta hasta tarde diciendo "solo un capítulo más".
+                    </div>
+                    <div class="modal-footer ">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Hobbie Series and movies-->
+        <div class="modal fade" id="seriesAndMovies" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modalHobies">
+                    <div class="modal-header">
+                        <h5 class="modal-title original-surfer-regular fontSize25 text-center" id="staticBackdropLabel">Series y Peliculas</h5>
+                    </div>
+                    <div class="modal-body poiret-one-regular  fontSize25">
+                        Así como los libros, las series y películas son mi escape favorito. Me fascinan las historias fantasiosas, esas que mezclan brujas, vampiros, seres mágicos y realidades alternas. Me gustan los universos donde cualquier cosa puede pasar, desde criaturas antiguas hasta hechizos imposibles. Pero no todo es magia y oscuridad; también disfruto muchísimo la comedia ligera que me haga reír sin parar, las series policiales llenas de misterio y las médicas que me dejan pegada tratando de resolver cada caso antes que los doctores de ficción. Me gusta tener variedad, pero siempre con un toque de lo fantástico o intrigante.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Hobbie Board Games-->
+        <div class="modal fade" id="boardGames" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modalHobies">
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title original-surfer-regular fontSize25" id="staticBackdropLabel">Series y Peliculas</h5>
+                    </div>
+                    <div class="modal-body poiret-one-regular fontSize25">
+                        Los juegos de mesa son otra de mis grandes pasiones. Me encantan, tanto los clásicos que reúnen a la familia como los modernos llenos de estrategias y cartas con giros inesperados. Últimamente estoy súper engomada con Unstable Unicorns, Coup y Regroup Chicken Army. Me gusta esa combinación entre humor, traiciones amistosas y planes secretos para ganar. Creo que los juegos de mesa tienen algo especial: logran juntar a las personas en torno a risas, rivalidades sanas y momentos memorables. Siempre estoy dispuesta a probar uno nuevo o enseñar mis favoritos a quien se anime.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!---Footer -->
+    <footer>
+        Derechos reservados 
+    </footer>    
+</body>
+</html>
