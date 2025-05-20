@@ -1,5 +1,11 @@
-@charset "UTF-8";
 /* Variables */
+$primary-color: rgb(162, 54, 139);
+$hover-color: #640645;
+$secondary-color: #a53a9e;
+$background-contact: rgba(8, 109, 141, 0.55);
+$font-family-surfer: "Original Surfer", sans-serif;
+$font-family-poiret: "Poiret One", sans-serif;
+
 /* Reset */
 * {
   margin: 0;
@@ -9,13 +15,13 @@
 
 /* Tipografías */
 .original-surfer-regular {
-  font-family: "Original Surfer", sans-serif;
+  font-family: $font-family-surfer;
   font-weight: 400;
   font-style: normal;
 }
 
 .poiret-one-regular {
-  font-family: "Poiret One", sans-serif;
+  font-family: $font-family-poiret;
   font-weight: 400;
   font-style: normal;
 }
@@ -34,46 +40,42 @@
 }
 
 .bodyContact {
-  background: rgba(8, 109, 141, 0.55);
+  background: $background-contact;
 }
 
 /* Navegación */
-nav a {
-  text-decoration: none;
-  color: black;
+nav {
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
-.headerMenu div {
-  padding: 20px;
-  background: rgb(162, 54, 139);
-}
-.headerMenu div nav {
-  text-align: right;
-}
-.headerMenu div nav a {
-  margin: 40px;
-  color: white;
-}
-.headerMenu div nav a:hover {
-  color: rgb(146, 158, 226);
+.headerMenu {
+  div {
+    padding: 20px;
+    background: $primary-color;
+
+    nav {
+      text-align: right;
+
+      a {
+        margin: 40px;
+        color: white;
+
+        &:hover {
+          color: rgb(146, 158, 226);
+        }
+      }
+    }
+  }
 }
 
 /* Utilidades */
-.fontSize28 {
-  font-size: 28px;
-}
-
-.fontSize18 {
-  font-size: 18px;
-}
-
-.fontSize14 {
-  font-size: 14px;
-}
-
-.fontSize12 {
-  font-size: 12px;
-}
+.fontSize28 { font-size: 28px; }
+.fontSize18 { font-size: 18px; }
+.fontSize14 { font-size: 14px; }
+.fontSize12 { font-size: 12px; }
 
 .colorWhite {
   color: white;
@@ -84,11 +86,12 @@ nav a {
   width: 50%;
   text-align: center;
   align-content: center;
-}
-.sectionOnePerfilImageDiv img {
-  width: 60%;
-  border-radius: 50%;
-  border: 10px solid rgb(162, 54, 139);
+
+  img {
+    width: 60%;
+    border-radius: 50%;
+    border: 10px solid $primary-color;
+  }
 }
 
 .sectionOneAboutmeDiv {
@@ -103,17 +106,18 @@ nav a {
 
 /* Botón colapsable */
 .btnColapse {
-  background-color: rgb(162, 54, 139);
+  background-color: $primary-color;
   border: 1px solid;
   border-radius: 16px;
   color: #fff;
   padding: 25px;
   margin: 25px;
   width: 250px;
-}
-.btnColapse:hover {
-  background-color: #640645;
-  color: #fff;
+
+  &:hover {
+    background-color: $hover-color;
+    color: #fff;
+  }
 }
 
 /* Modal */
@@ -123,7 +127,7 @@ nav a {
 }
 
 .modalHobies {
-  background: rgb(162, 54, 139);
+  background: $primary-color;
   color: white;
 }
 
@@ -134,7 +138,7 @@ footer {
   width: 100%;
   text-align: center;
   color: white;
-  background: rgb(162, 54, 139);
+  background: $primary-color;
   padding: 15px;
 }
 
@@ -149,8 +153,8 @@ footer {
 
 /* Progress Bar */
 .progress-bar {
-  background-color: #a53a9e;
-  font-family: "Original Surfer", sans-serif;
+  background-color: $secondary-color;
+  font-family: $font-family-surfer;
   font-size: 30px;
 }
 
@@ -162,17 +166,17 @@ footer {
 
 /* Botón Enviar */
 .btnSend {
-  background: #a53a9e;
+  background: $secondary-color;
   color: white;
   width: 50%;
-}
-.btnSend:hover {
-  background: #e09bdc;
-  color: white;
-  width: 70%;
-}
 
-.justifyItems {
+  &:hover {
+    background: #e09bdc;
+    color: white;
+    width: 70%;
+  }
+}
+.justifyItems{
   justify-items: center;
 }
 
@@ -180,5 +184,3 @@ footer {
 .material-symbols-outlined {
   vertical-align: bottom;
 }
-
-/*# sourceMappingURL=styles.css.map */
